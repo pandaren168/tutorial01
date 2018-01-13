@@ -45,11 +45,11 @@ function sortSmallToBig(inputArray) {
 function tester() {
   let actualResult = sortSmallToBig(inputArray);
   if (actualResult.length !== resultArray.length) {
-    return console.log('Noob')
+    return console.log('Noob Shit')
   }
   for (let i = 0; i < actualResult.length; i++) {
     if (actualResult[i] != resultArray[i]) {
-      return console.log('Noob');
+      return console.log('Noob Shit');
     }
   }
   return console.log('You Win');
