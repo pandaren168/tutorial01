@@ -69,7 +69,14 @@
 const express = require('express')
 const test = require("./controller/test")
 const app = express()
+mongoose = require("mongoose")
+
+mongoose.connect("mongodb://localhost:27017",{
+    useMongoClient: true
+})
 
 app.get('/hello', test.helloworld)
+
+app.get("/test", test.createUser)
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
